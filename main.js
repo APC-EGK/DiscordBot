@@ -48,3 +48,11 @@ client.on("message", async message => {
 
 client.login(process.env.DISCORD_TOKEN);
 
+const reqHandler = (req, res) => {
+   res.writeHead(200);
+   res.end("Why hello");
+};
+
+const server = require("http").createServer(requestListener);
+
+server.listen(process.env.PORT);
