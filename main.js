@@ -46,5 +46,5 @@ client.on("message", async message => {
 });
 
 
-client.login('Token goes here');
+client.login(process.env.DISCORD_TOKEN);
 
